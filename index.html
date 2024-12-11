@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Elements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Elements</h1>
+            <p class="subtitle">A collection of beautiful, interactive components</p>
+        </header>
+        <section class="components">
+            <!-- Color Toggle Button -->
+            <div class="component">
+                <h2>Color Toggle Button</h2>
+                <button id="colorToggle" class="btn">Toggle Color</button>
+            </div>
+            <!-- Dynamic Text Slider -->
+            <div class="component">
+                <h2>Dynamic Text Slider</h2>
+                <div class="slider-container">
+                    <label for="fontSlider">Font Size: <span id="sizeValue">16</span>px</label>
+                    <input type="range" id="fontSlider" min="12" max="32" value="16">
+                    <p id="dynamicText">This text changes size dynamically!</p>
+                </div>
+            </div>
+            <!-- Modal Dialog -->
+            <div class="component">
+                <h2>Modal Dialog</h2>
+                <button id="openModal" class="btn">Open Modal</button>
+            </div>
+            <!-- Custom Select -->
+            <div class="component">
+                <h2>Custom Select</h2>
+                <select id="customSelect" class="select">
+                    <option value="">Select an option</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+                <p id="selectMessage" class="message"></p>
+            </div>
+            <!-- Validation Form -->
+            <div class="component">
+                <h2>Validation Form</h2>
+                <form id="validationForm" class="form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe">
+                        <span class="error" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john@example.com">
+                        <span class="error" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="••••••••">
+                        <span class="error" id="passwordError"></span>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome</h2>
+            <p>This is a beautiful modal with smooth animations and a backdrop blur effect.</p>
+            <button id="closeModal" class="btn">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
